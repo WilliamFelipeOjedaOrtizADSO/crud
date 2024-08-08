@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="layout">
+    <form class="form" novalidate>
+            <label for="Nombre">Nombre</label>
+            <input  id="nombre" autocomplete="off" required> 
+            <label for="Apellidos">Apellidos</label>
+            <input  id="apellidos" autocomplete="off" required>
+        <label for="telefono">Telefono</label>
+        <input type="number" id="telefono" autocomplete="off" required>
+        
+        <label for="direccion">Direccion</label>
+        <input type="text" id="direccion" autocomplete="off" required>
+
+        <label for="email">Email</label>
+        <input type="text" id="email" autocomplete="off" required>
+
+        <label for="documento">Documento</label>
+        <input type="text" id="documento" autocomplete="off" required>
+
+        <label for="tipo-documento">Tipo De Documento</label>
+        <select name="tipo" id="tipo" required></select>
+
+        <div>
+            <input type="checkbox" id="politicas">   
+            <label for="politicas">
+                Acepta las politicas de uso
+            </label>
+        </div>
+        
+        <button type="summit" id="boton">Enviar</button>
+        
+    </form>
+    <script src="app.js" type="module"></script>
+
+    <table class="tabla">
+        <thead>
+            <th> Nombre</th>
+            <th> Apellidos</th>
+            <th>Telefono</th>
+            <th>Email</th>
+            <th>Documento</th>
+            <th>tipo-documento</th>
+            <th>Direccion</th>
+        </thead>
+        <tbody>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+        </tbody>
+    </table>
+</div>
+    
+</div>
+
+    <template id="tp_users">
+        <tr>
+            <td class="nombre"></td>
+            <td class="apellido"></td>
+            <td class="telefono"></td>
+            <td class="direccion"></td>
+            <td class="tipo"></td>
+            <td class="documento"></td>
+            <td class="email"></td>
+        </tr>
+    </template>
+
+</body>
+</html>
