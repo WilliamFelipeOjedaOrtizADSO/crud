@@ -1,6 +1,6 @@
-import is_valid from "./is_valid.js";
-import letras from "./letras.js";
-import remover from "./remover.js";
+import is_valid from "./modulos/is_valid.js";
+import letras from "./modulos/letras.js";
+import remover from "./modulos/remover.js";
 
 const $formulario = document.querySelector("form");
 const nombre = document.querySelector("#nombre");
@@ -33,3 +33,4 @@ $formulario.addEventListener("submit" , (event)=>{
 nombre.addEventListener("keypress", (event) => {
     remover(event, nombre);
 });
+
